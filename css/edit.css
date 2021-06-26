@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor: #ed563b;
+}
+
+.btn-danger {
+    background-color: var(--maincolor) !important;
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+}
+img{
+    border-radius: 5px;
+}
+
+/* *{border:1px solid red} */
+/* start header */
+
+header {
+    height: 100vh;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(35, 45, 57, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+header .start{
+    background-color: rgba(250,250,250,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+header .container nav {
+    background-color: transparent;
+}
+
+header .container nav>a {
+    
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 10px;
+}
+    header .container nav>a {
+        color: white;
+    }
+
+header .container nav a span {
+    color: var(--maincolor);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.active a{
+    color: var(--maincolor) !important;
+    font-weight: bold;
+}
+
+header .container .content {
+    width: 50%;
+    color: white;
+    margin-top: 200px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 21%;
+    transform: translate(-50%, -50%);
+}
+
+header .container .content h1 {
+    font-size: 86px;
+}
+
+
+@media (max-width: 992px) { 
+    .navbar-collapse{
+        position: absolute;
+        left: 0px;
+        top: 54px;
+        width: 100%;
+        background-color: rgb(33, 46, 66);
+        border: 5px solid rgb(221, 221, 221);
+        padding: 5px;
+        z-index: 999;
+        text-align: center;
+    }
+    .navbar-collapse button{
+        width: 100%;
+    }
+    header .container nav>a{
+        color: black !important;
+    }
+ }
+ /* nav color  */
+@media (max-width: 992px) { 
+    header .start{
+        background-color: #f7f7f7 !important;
+    }
+    .container{
+        width: 85%;
+    }
+ }
+ header .container nav a span {
+    color: var(--maincolor) !important;
+}
+
+/* end header */
+/* start programs */
+.programs .container .content-1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 3;
+}
+.programs .container .content-1 span{
+    color: var(--maincolor);
+}
+.programs .container .content-2{}
+.programs .container .content-2 .option{
+    display: flex;
+    margin-top: 20px;
+    line-height: 1.2;
+    padding: 2px;
+}
+.programs .container .content-2 .option img{
+    margin-right: 15px;
+}
+.programs .container .content-2 .option h2{
+    font-size: 15px;
+    font-weight: bold;
+}
+.programs .container .content-2 .option span{
+    color: var(--maincolor);
+}
+.qoute{
+    margin: 50px 0;
+    background-image: url(../images/cta-bg.jpg);
+}
+.qoute .container{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+.qoute .container h1>span{
+    color: var(--maincolor);
+}
+/* end programs */
+/* start classes */
+.classes{
+margin-bottom: 30px;
+}
+.classes .container .header{
+    text-align: center;
+    line-height: 3;
+    margin-bottom: 50px;
+}
+.classes .container .header h1 span{
+    color: var(--maincolor);
+}
+.classes .container .class-c{
+    display: flex;
+    box-shadow: 0px 0px 13px -3px #888884;
+    padding: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.classes .container .row .right-div{
+    line-height: 2;
+}
+.classes .container .class-c img{
+    margin-right: 10px;
+}
+.classes .container .row .right-div img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+@media (max-width: 992px) { 
+    .classes .container .row .right-div img{
+        margin-top: 30px;
+    }
+ }
+
+/* end classes */
+/* start schedule */
+.schedule{
+    background-image: url(../images/schedule-bg.jpg);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.schedule .container .header{
+    text-align: center;
+}
+.schedule .container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.schedule .container ul li{
+    margin-right: 10px;
+}
+.schedule .container ul li a{
+    color: white;
+    text-decoration: none;
+}
+.schedule .container ul li a:hover{
+    color: var(--maincolor);
+}
+.schedule .container .table
+{
+    color: white;
+    border-color: white;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+    color: #fff;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+/* end schedule */
+/* start expert trainers */
+.expert-trainers{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.expert-trainers .container .header{
+    text-align: center;
+}
+.expert-trainers .container .row{
+    justify-content: space-around;
+    margin-top: 100px;
+}
+@media (max-width: 992px) { 
+    .expert-trainers .container .row .trainner {
+        margin-bottom: 31px;
+    }
+ }
+
+
+.expert-trainers .container .row .trainner{
+    box-shadow: 0px 0px 13px -3px #888884;
+    padding: 30px;
+    border-radius: 5px;
+}
+.expert-trainers .container .row .trainner img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.expert-trainers .container .row .trainner span{
+    color: var(--maincolor);
+}
+.expert-trainers .container .row .trainner h2{
+}
+/* end expert trainers */
+/* start contact */
+.contact{
+    background-image: url(../images/contact-bg.jpg);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 0;
+}
+@media (max-width: 992px) { 
+    .contact {
+        width: 96%;
+    }
+    .contact .right-div{
+        padding: 38px;
+    }
+ }
+.contact .row{
+    justify-content: space-around;
+}
+.contact .right-div{
+    padding: 30px;
+background-color: white;
+}
+.contact .right-div input{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 0px 10px;
+}
+.contact .right-div textarea{
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 0px 10px;
+}
+@media (max-width: 992px) { 
+    .contact {
+        width: 96%;
+    }
+    .contact .right-div{
+        padding: 38px;
+    }
+ }
+/* end contact */
+/* start footer */
+footer{
+    text-align: center;
+    background-color: #404b55;
+    color: white;
+    padding: 30px 0;
+}
+/* end footer */
